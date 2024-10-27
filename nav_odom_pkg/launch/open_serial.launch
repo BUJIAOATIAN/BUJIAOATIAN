@@ -1,0 +1,9 @@
+<launch>
+    <param name="cmd_vel_topic" type="string" value="smooth_cmd_vel"/>
+    <node pkg="nav_odom_pkg" type="serial_transmit" name="serial_transmit" output="screen" 
+    args="/dev/ttyUSB0">
+	
+    </node>
+
+
+</launch>
