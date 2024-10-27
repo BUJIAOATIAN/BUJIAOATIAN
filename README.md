@@ -236,7 +236,7 @@ sudo apt-get install ros-noetic-octomap-server
 # 安装octomap 在 rviz 中的插件
 sudo apt-get install ros-noetic-octomap-rviz-plugins
 ```
-我在本仓库中的FAST_LIO/launch目录下有个` PCD2Map.launch `和` build_Map.launch `文件，` PCD2Map.launch `是启动ctomap_server的。具体看看这两个launch文件。
+FAST_LIO/launch目录下添加` PCD2Map.launch `和` build_Map.launch `文件，` PCD2Map.launch `是启动ctomap_server的。具体看看这两个launch文件。
 输入以下命令
 ```bash
 roslaunch fast_lio build_Map.launch
@@ -306,7 +306,7 @@ roslaunch nav_odom_pkg localize.launch
 
 ## 结语
 这个项目只是简单的调用了fastlio的里程计数据，然后进行简单的跑点。pointlio fastlio2和fasterlio调用过程大致思路也是这样的。
-- 如果要使用路进规划的话，可以自行查阅资料。也可以参考这个[仓库](https://github.com/66Lau/NEXTE_Sentry_Nav?tab=readme-ov-file)和这个[https://gitee.com/SMBU-POLARBEAR/pb_rm_simulation#https://gitee.com/link?target=https%3A%2F%2Fflowus.cn%2Flihanchen%2Ffacb28a9-5d34-42a7-9bc8-630a182c3571]ros2的框架
+- 如果要使用路进规划的话，可以自行查阅资料。也可以参考这个[仓库](https://github.com/66Lau/NEXTE_Sentry_Nav?tab=readme-ov-file)和这个[ros2的框架](https://gitee.com/SMBU-POLARBEAR/pb_rm_simulation#https://gitee.com/link?target=https%3A%2F%2Fflowus.cn%2Flihanchen%2Ffacb28a9-5d34-42a7-9bc8-630a182c3571)
 
 
 
