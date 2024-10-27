@@ -236,7 +236,12 @@ sudo apt-get install ros-noetic-octomap-server
 # 安装octomap 在 rviz 中的插件
 sudo apt-get install ros-noetic-octomap-rviz-plugins
 ```
+
 FAST_LIO/launch目录下添加` PCD2Map.launch `和` build_Map.launch `文件，` PCD2Map.launch `是启动ctomap_server的。具体看看这两个launch文件。
+```bash
+#FAST_LIO/launch目录下添加` PCD2Map.launch `和` build_Map.launch `文件
+git clone https://github.com/BUJIAOATIAN/BUJIAOATIAN.git
+```
 输入以下命令
 ```bash
 roslaunch fast_lio build_Map.launch
@@ -289,7 +294,7 @@ rosrun map_server map_saver map:=/projected_map -f /home/li/mid360_ws/src/FAST_L
 - pid和平滑处理 需要根据自己的机器人底盘进行参数调整
 
 ### 发送数据
-- 通过串口发送给下位机 [可参考](https://blog.csdn.net/weixin_43972102/article/details/130874314?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522BD9C69A2-9F1A-414A-A2ED-54D60C26B06E%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=BD9C69A2-9F1A-414A-A2ED-54D60C26B06E&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-130874314-null-null.142^v100^pc_search_result_base8&utm_term=ros%E4%BD%BF%E7%94%A8%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1&spm=1018.2226.3001.4187)
+- 通过串口发送给下位机 [可参考](https://blog.csdn.net/weixin_43972102/article/details/130874314?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522BD9C69A2-9F1A-414A-A2ED-54D60C26B06E%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=BD9C69A2-9F1A-414A-A2ED-54D60C26B06E&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-130874314-null-null.142^v100^pc_search_result_base8&utm_term=ros%E4%BD%BF%E7%94%A8%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1&spm=1018.2226.3001.4187)，你也可以直接用我的
 ```bash
 #安装
 sudo apt-get update
@@ -299,7 +304,10 @@ sudo apt-get install ros-noetic-serial
 ```bash
 sudo chmod 666 /dev/ttyUSB0
 ```
-#### 可以直接在终端输入 
+
+
+
+## 也可以直接在终端输入  启动全部项
 ```bash
 roslaunch nav_odom_pkg localize.launch
 ```
