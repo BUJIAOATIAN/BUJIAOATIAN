@@ -306,7 +306,7 @@ roslaunch nav_odom_pkg localize.launch
 
 ## 结语
 这个项目只是简单的调用了fastlio的里程计数据，然后进行简单的跑点。pointlio fastlio2和fasterlio调用过程大致思路也是这样的。
-- 如果要使用路进规划的话，可以自行查阅资料。也可以参考这个[仓库](https://github.com/66Lau/NEXTE_Sentry_Nav?tab=readme-ov-file)和这个[ros2的框架](https://gitee.com/SMBU-POLARBEAR/pb_rm_simulation#https://gitee.com/link?target=https%3A%2F%2Fflowus.cn%2Flihanchen%2Ffacb28a9-5d34-42a7-9bc8-630a182c3571)
+- 如果要使用路径规划的话，可以自行查阅资料。也可以参考这个[仓库](https://github.com/66Lau/NEXTE_Sentry_Nav?tab=readme-ov-file)和这个[ros2的框架](https://gitee.com/SMBU-POLARBEAR/pb_rm_simulation#https://gitee.com/link?target=https%3A%2F%2Fflowus.cn%2Flihanchen%2Ffacb28a9-5d34-42a7-9bc8-630a182c3571)
 
 
 
