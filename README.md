@@ -239,8 +239,8 @@ sudo apt-get install ros-noetic-octomap-rviz-plugins
 
 FAST_LIO/launch目录下添加` PCD2Map.launch `和` build_Map.launch `文件，` PCD2Map.launch `是启动ctomap_server的。具体看看这两个launch文件。
 ```bash
-#FAST_LIO/launch目录下添加` PCD2Map.launch `和` build_Map.launch `文件
-git clone https://github.com/BUJIAOATIAN/BUJIAOATIAN.git
+#clone在src目录下，FAST_LIO/launch目录下添加` PCD2Map.launch `和` build_Map.launch `文件
+git clone https://github.com/BUJIAOATIAN/Robot-Localization_mid360.git
 ```
 输入以下命令
 ```bash
